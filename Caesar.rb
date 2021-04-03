@@ -19,19 +19,4 @@ def caesar_cipher(word, key)
 end
     p new_word.join('')
 end
-caesar_cipher("Hello World!!",2)
-
-arr = ['1','?','#','4','5','a','!',' ','9']
-
-def reg_test(parametro)
-  reg= /\W/
-  parametro.each do |itm|
-    if itm=~ reg
-      puts 'this is something'
-    else  
-      puts 'this is a number or letter or space'
-  end
-end
-end
- # reg_test(arr)
 
