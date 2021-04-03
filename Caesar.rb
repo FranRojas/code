@@ -9,7 +9,10 @@ def caesar_cipher(word, key)
    else
     code = ltr.ord + key
       if code.between?(97,122) || code.between?(65, 90)
-       
+        new_word.push(code.chr)
+      elsif 
+        key < 0
+        code +=26
         new_word.push(code.chr)
       else
         code-=26
@@ -20,3 +23,6 @@ end
     p new_word.join('')
 end
 
+caesar_cipher('alBErto', 3)
+caesar_cipher('doEHuwr', -3)
+caesar_cipher( 'c c C c c', -2)
